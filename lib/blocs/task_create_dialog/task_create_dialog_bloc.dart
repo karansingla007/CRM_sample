@@ -1,7 +1,8 @@
 import 'package:bloc/bloc.dart';
-import 'package:flutter_assignment/src/blocs/task_create_dialog/task_create_dialog_event.dart';
-import 'package:flutter_assignment/src/blocs/task_create_dialog/task_create_dialog_state.dart';
 import 'package:flutter_assignment/utils/util.dart';
+
+import 'task_create_dialog_event.dart';
+import 'task_create_dialog_state.dart';
 
 class TaskCreateDialogBloc
     extends Bloc<TaskCreateDialogEvent, TaskCreateDialogState> {

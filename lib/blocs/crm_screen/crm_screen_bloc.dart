@@ -6,11 +6,12 @@ import 'package:flutter_assignment/constants/constant.dart';
 import 'package:flutter_assignment/constants/strings.dart';
 import 'package:flutter_assignment/databases/task_card/daos/task_cards_dao.dart';
 import 'package:flutter_assignment/databases/task_card/model/task_card.dart';
-import 'package:flutter_assignment/src/blocs/crm_screen/crm_screen_event.dart';
-import 'package:flutter_assignment/src/blocs/crm_screen/crm_screen_state.dart';
 import 'package:flutter_assignment/utils/permission_handler.dart';
 import 'package:flutter_assignment/utils/time_util.dart';
 import 'package:flutter_assignment/utils/util.dart';
+
+import 'crm_screen_event.dart';
+import 'crm_screen_state.dart';
 
 class CrmScreenBloc extends Bloc<CrmScreenEvent, CrmScreenState> {
   final TaskCardsDao taskCardsDao = TaskCardsDao.getInstance();

@@ -1,20 +1,19 @@
 import 'package:drag_and_drop_lists/drag_and_drop_lists.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_assignment/blocs/crm_screen/crm_screen.dart';
 import 'package:flutter_assignment/constants/strings.dart';
 import 'package:flutter_assignment/databases/task_card/model/task_card.dart'
     as task_card_model;
-import 'package:flutter_assignment/dialogs/language_option_dialog.dart';
-import 'package:flutter_assignment/dialogs/task_create_dialog.dart';
 import 'package:flutter_assignment/multi_language/multi_language.dart';
 import 'package:flutter_assignment/src/atoms/simple_text.dart';
+import 'package:flutter_assignment/src/dialogs/language_option_dialog.dart';
+import 'package:flutter_assignment/src/dialogs/task_create_dialog.dart';
 import 'package:flutter_assignment/src/molecules/app_bar_base.dart';
 import 'package:flutter_assignment/src/screens/task_detail_screen.dart';
 import 'package:flutter_assignment/src/widgets/create_task_card.dart';
 import 'package:flutter_assignment/src/widgets/task_card.dart';
 import 'package:flutter_assignment/utils/util.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-
-import '../blocs/crm_screen/crm_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   final CrmScreenBloc _crmScreenBloc = CrmScreenBloc();
