@@ -163,7 +163,11 @@ class CrmScreenBloc extends Bloc<CrmScreenEvent, CrmScreenState> {
       File f = File("${dir}crmSample.csv");
 
       String csv = const ListToCsvConverter().convert(rows);
-      f.writeAsString(csv);
-    } catch (_, log) {}
+      f.writeAsString(csv).whenComplete(() {
+        Util.showToast(msg: Strings.savedInDownloads);
+      });
+    } catch (_, log) {
+      print("error");
+    }
   }
 }

@@ -27,28 +27,32 @@ class TaskDetailScreen extends StatelessWidget {
         title: SimpleText(
             text: MultiLanguage.od(context)!.translate(Strings.taskDetail)),
         actions: [
-          IconButton(
-            icon: const Icon(
-              Icons.edit,
-            ),
-            onPressed: () {
-              showDialog(
-                context: context,
-                builder: (context) => Center(
-                  child: TaskCreateDialog(
-                    isFromEdit: true,
-                    onClickUpdate: (heading, body, memberIds, endTime, taskId) {
-                      onUpdateTask(heading, body, memberIds, endTime, taskId);
-                      Navigator.of(context)
-                        ..pop()
-                        ..pop();
-                    },
-                    taskCard: taskCard,
+          if (taskCard.status == CrmHeaders.done.name)
+            Container()
+          else
+            IconButton(
+              icon: const Icon(
+                Icons.edit,
+              ),
+              onPressed: () {
+                showDialog(
+                  context: context,
+                  builder: (context) => Center(
+                    child: TaskCreateDialog(
+                      isFromEdit: true,
+                      onClickUpdate:
+                          (heading, body, memberIds, endTime, taskId) {
+                        onUpdateTask(heading, body, memberIds, endTime, taskId);
+                        Navigator.of(context)
+                          ..pop()
+                          ..pop();
+                      },
+                      taskCard: taskCard,
+                    ),
                   ),
-                ),
-              );
-            },
-          )
+                );
+              },
+            )
         ],
       ),
       body: Padding(
@@ -127,21 +131,24 @@ class TaskDetailScreen extends StatelessWidget {
             const SizedBox(
               height: 16,
             ),
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                SimpleBoldText(
-                  text: "Total Time Spend",
-                ),
-                const SizedBox(
-                  height: 8,
-                ),
-                SimpleText(
-                  text:
-                      "${TimeUtil.getTimeDiff(taskCard.totalTimeSpend)} Spend",
-                ),
-              ],
-            )
+            taskCard.status == CrmHeaders.done.name
+                ? Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      SimpleBoldText(
+                        text: MultiLanguage.od(context)!
+                            .translate(Strings.totalTimeSpend),
+                      ),
+                      const SizedBox(
+                        height: 8,
+                      ),
+                      SimpleText(
+                        text:
+                            "${TimeUtil.getTimeDiff(taskCard.totalTimeSpend)} Spend",
+                      ),
+                    ],
+                  )
+                : Container(),
           ],
         ),
       ),

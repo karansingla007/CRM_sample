@@ -18,5 +18,7 @@
   "todo": "todo",
   "inProgress": "in Progress",
   "done": "done",
-  "export_to_csv": "Export to CSV"
+  "export_to_csv": "Export to CSV",
+  "total_time_spend": "Total Time Spend",
+  "saved_in_downloads": "Saved in Downloads"
 }

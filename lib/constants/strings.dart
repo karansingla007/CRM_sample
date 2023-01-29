@@ -17,6 +17,8 @@ class Strings {
   static const String chooseLanguage = "choose_language";
   static const String changeLanguage = "change_language";
   static const String exportToCsv = "export_to_csv";
+  static const String totalTimeSpend = "total_time_spend";
+  static const String savedInDownloads = "Saved in Downloads";
 
   /// HardCode right now
   static const List<String> memberNameList = [

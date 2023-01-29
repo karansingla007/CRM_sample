@@ -1,4 +1,6 @@
+import 'package:flutter/material.dart';
 import 'package:flutter_assignment/constants/strings.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 
 class Util {
   static bool isStringNotNull(str) {
@@ -34,5 +36,16 @@ class Util {
   static String getInitialFromFullName({required String fullName}) {
     return (fullName.split(" ").first[0] + fullName.split(" ")[1][0])
         .toUpperCase();
+  }
+
+  static void showToast({required String msg}) {
+    Fluttertoast.showToast(
+        msg: msg,
+        toastLength: Toast.LENGTH_SHORT,
+        gravity: ToastGravity.CENTER,
+        timeInSecForIosWeb: 1,
+        backgroundColor: Colors.grey,
+        textColor: Colors.white,
+        fontSize: 16.0);
   }
 }
