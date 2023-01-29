@@ -1,0 +1,22 @@
+{
+  "crm_sample": "CRM-Beispiel",
+  "task_details": "Aufgabendetails",
+  "create_task": "Aufgabe erstellen",
+  "create": "erstellen",
+  "update": "aktualisieren",
+  "add_task_heading": "Aufgabenüberschrift hinzufügen",
+  "task_members": "Task-Mitglieder",
+  "date": "Datum",
+  "hour": "Stunde",
+  "members": "Mitglieder",
+  "end_time": "Endzeit",
+  "deadLine": "Termin",
+  "actual_end_date": "Tatsächliches Enddatum",
+  "add_task_description": "Aufgabenbeschreibung hinzufügen",
+  "choose_language": "Sprache wählen",
+  "change_language": "Sprache ändern",
+  "todo": "machen",
+  "inProgress": "in Bearbeitung",
+  "done": "fertig",
+  "export_to_csv": "In CSV exportieren"
+}

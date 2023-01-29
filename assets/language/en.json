@@ -1,0 +1,22 @@
+{
+  "crm_sample": "CRM Sample",
+  "task_details": "Task Details",
+  "create_task": "Create task",
+  "create": "create",
+  "update": "update",
+  "add_task_heading": "Add Task Heading",
+  "task_members": "Task members",
+  "date": "Date",
+  "hour": "Hour",
+  "members": "Members",
+  "end_time": "End Time",
+  "deadLine": "DeadLine",
+  "actual_end_date": "Actual End Date",
+  "add_task_description": "Add task description",
+  "choose_language": "Choose Language",
+  "change_language": "Change Language",
+  "todo": "todo",
+  "inProgress": "in Progress",
+  "done": "done",
+  "export_to_csv": "Export to CSV"
+}
