@@ -1,6 +1,6 @@
 # CRM Sample
 
-A CRM Sample created in flutter using Bloc. Boilerplate supports mobile, clone the appropriate branches mentioned below:
+A CRM Sample created in flutter using Bloc.It has capabilty to manage task and convert to your own native language. clone the appropriate branches mentioned below:
 
 ## Getting Started
 
@@ -13,7 +13,7 @@ This project contains the minimal implementation required to . The repository co
 Download or clone this repo by using the link below:
 
 ```
-https://github.com/karansingla007/CRM_sample
+https://github.com/karansingla007/Trello-clone
 ```
 
 **Step 2:**
